@@ -1,3 +1,5 @@
 .idea
 project/*
 target
+src/main/scala/pack_db/passwordConfig.yaml
+
