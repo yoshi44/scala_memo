@@ -22,9 +22,9 @@ object ConnectClearDB extends App {
   }
 
   def readConfigFile: (String, String) = {
-    val currentPaht = getCurrentPath
-    val dbConfig = scala.io.Source.fromFile(s"${currentPaht}/src/main/scala/pack_db/dbConfig.yaml").mkString
-    val passwordConfig = scala.io.Source.fromFile(s"${currentPaht}/src/main/scala/pack_db/passwordConfig.yaml").mkString
+    val currentPath = getCurrentPath
+    val dbConfig = scala.io.Source.fromFile(s"${currentPath}/src/main/scala/pack_db/dbConfig.yaml").mkString
+    val passwordConfig = scala.io.Source.fromFile(s"${currentPath}/src/main/scala/pack_db/passwordConfig.yaml").mkString
     (dbConfig, passwordConfig)
   }
 
